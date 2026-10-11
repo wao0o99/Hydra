@@ -1,0 +1,4 @@
+include SUT.c
+include requirements.txt
+recursive-include configs *.toml
+include aalpy/LICENCE.txt

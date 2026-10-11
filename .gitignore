@@ -1,0 +1,24 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Build and runtime artifacts
+/build/
+/learn_tcp/model_learning/output/
+/log.txt
+*.log
+*.pcap
+*.pcapng
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+/runs/
+/dist/
+*.egg-info/
+.ruff_cache/

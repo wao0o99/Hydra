@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hydra-tcp-learning"
+version = "0.1.0"
+description = "TCP state learning and input exploration"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = ["Operating System :: POSIX :: Linux", "Programming Language :: Python :: 3.12"]
+dependencies = ["pcapy-ng==2.1.0", "dpkt==1.9.8", "pydot==4.0.1", "scapy==2.5.0", "rich>=13.9,<15", "psutil>=6,<8"]
+
+[project.optional-dependencies]
+profile = ["yappi>=1.6,<2"]
+
+[project.scripts]
+hydra = "hydra.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["hydra*", "aalpy*", "learn_tcp*"]
+
+[tool.setuptools.package-data]
+"aalpy" = ["LICENCE.txt"]
+"learn_tcp.model_learning" = ["PreGeneratedInputs.txt"]
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82"]

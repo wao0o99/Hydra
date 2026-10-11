@@ -1,0 +1,10 @@
+[tcp]
+SUL_ip = "192.168.77.20"
+SUL_port_control = 5000
+my_ip = "192.168.77.10"
+my_port = 20000
+my_port_control = 5000
+interface = "test0"
+RCV_WAIT_TIME = 0.5
+TIME_SLOT = 0.1
+MAX_CONCURRENCY = 300
